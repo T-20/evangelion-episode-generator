@@ -116,7 +116,7 @@
             function convertCanvasToImage(ctx) {
                 let image = new Image();
                 image.src = ctx.toDataURL('image/jpeg', 1.0);
-                // image.setAttribute('onClick', "window.open(this.src)");
+                image.setAttribute('onClick', "window.open(this.src)");
                 return image;
             }
 
