@@ -31,7 +31,6 @@
                 </div>
                 <button id="generate">Generate</button>
                 <br>
-                <small>Click on the image to open it on a new page and save it.</small>
             </form>
         </article>
 
@@ -116,7 +115,6 @@
             function convertCanvasToImage(ctx) {
                 let image = new Image();
                 image.src = ctx.toDataURL('image/jpeg', 1.0);
-                image.setAttribute('onClick', "window.open(this.src)");
                 return image;
             }
 
